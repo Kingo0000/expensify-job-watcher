@@ -1,0 +1,11 @@
+name = "expensify-job-watcher"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+
+[triggers]
+crons = ["*/2 * * * *"]
+
+[[kv_namespaces]]
+binding = "STATE"
+id = "f704bfeec71a4b02ad00a6319e2cea95"
